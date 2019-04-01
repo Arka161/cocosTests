@@ -1,3 +1,5 @@
+//Adding a comment in the beginning
+
 #include "AppDelegate.h"
 #include "SplashScene.h"
 
