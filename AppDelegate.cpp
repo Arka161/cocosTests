@@ -98,6 +98,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run
     director->runWithScene(scene);
+	
+	//This is a random comment
 
     return true;
 }
