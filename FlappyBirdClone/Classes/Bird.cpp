@@ -22,7 +22,16 @@ Bird::Bird(cocos2d::Layer *layer)
 
 	layer->addChild(flappyBird,100);
 
+	isFalling = true; 
+
 }
 
-
+void Bird::Fall()
+{
+	if (true == isFalling)
+	{
+		flappyBird->setPositionX(visibleSize.width / 2 + origin.x);
+		flappyBird->setPositionY(flappyBird->getPositionY() + (BIRD_FALLING_SPEED)* visibleSize.height);
+	}
+}
 
